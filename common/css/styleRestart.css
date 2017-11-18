@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+#gray {
+    background: #000;
+}
+
+#next_contentsInner {
+    max-width: 640px;
+}
+
+.stageConceptBottom{
+	margin-bottom: 40px;
+}
+
+.stageConceptBottom p{
+	line-height: 2em;
+}
+
+#stageConcept{
+    width: auto;
+    float: none;
+    margin: 0 10px 25px 10px;
+    padding-top: 25px;
+}
+
+.menuBt {
+    width: 100%;
+    background-color: hsla(0,0%,10%,1.00);
+    padding: 20px 10px 20px 10px;
+    border: 1px solid hsla(0,0%,22%,1.00);
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.menuBt a {
+	text-decoration: none;
+}
+
+.pageNumber {
+    padding: 60px 0 0;
+}
