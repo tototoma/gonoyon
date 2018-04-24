@@ -15,8 +15,31 @@
 <link rel="stylesheet" type="text/css" href="common/css/cssreset.css" media="all" />
 <link rel="stylesheet" type="text/css" href="common/css/cssfonts.css" media="all" />
 <link rel="stylesheet" type="text/css"  href="common/css/style.css" media="all" />
+<link rel="stylesheet" href="common/css/slider-pro.min.css"/>
 <script type="text/javascript" src="common/js/jquery-3.1.1.min.js" ></script>
+<script src="common/js/jquery.sliderPro.min.js"></script>
 <script type="text/javascript" src="common/js/pageTop.js"></script>
+<script>
+$( document ).ready(function( $ ) {
+  $('#slider2').sliderPro({
+    width:920,//横幅
+    arrows: true,//左右の矢印を出す
+    buttons: false,//ナビゲーションボタン
+    shuffle: true,//スライドのシャッフル
+    thumbnailWidth: 200,//サムネイルの横幅
+    thumbnailHeight: 60,//サムネイルの縦幅
+    slideDistance:0,//スライド同士の距離
+    aspectRatio: 1.5,//縦横比の設定
+    breakpoints: {
+      800: {//表示方法を変えるサイズ
+      	width:560,
+        thumbnailWidth: 110,
+        thumbnailHeight: 40
+      }
+    }
+  });
+});
+</script>
 </head>
 <body>
     <div id="fb-root"></div>
@@ -27,7 +50,6 @@
                     <ul id="mainNav" class="clearfix">
                         <li class="navTop"><a href="#"><img src="common/img/glonav1_on.png" width="81" height="29" alt="トップ" /></a></li>
                         <li class="navNew"><a href="next/restart/intro.html"><img src="common/img/glonav2_off.png" width="81" height="28" alt="最新の公演" /></a></li>
-                        <li class="navProfile"><a href="about/index.html"><img src="common/img/glonav3_off.png" width="81" height="29" alt="5-4とは"  /></a></li>
                         <li class="navMenber"><a href="member/index.html"><img src="common/img/glonav4_off.png" width="81" height="28" alt="生徒名簿"  /></a></li>
                         <li class="navBlog"><a href="http://gkdn5-4.blogspot.jp/" target="_blank"><img src="common/img/glonav5_off.png" width="81" height="29" alt="ブログ"  /></a></li>
                     </ul>
@@ -52,7 +74,6 @@
                         <ul id="mainNav2" class="res clearfix">
                             <li class="navTop"><a href="#"><img src="common/img/glonav1_on.png" width="81" height="29" alt="トップ" /></a></li>
                             <li class="navNew"><a href="next/restart/intro.html"><img src="common/img/glonav2_off.png" width="81" height="28" alt="最新の公演" /></a></li>
-                            <li class="navProfile"><a href="about/index.html"><img src="common/img/glonav3_off.png" width="81" height="29" alt="5-4とは"  /></a></li>
                             <li class="navMenber"><a href="member/index.html"><img src="common/img/glonav4_off.png" width="81" height="28" alt="生徒名簿"  /></a></li>
                             <li class="navBlog"><a href="http://gkdn5-4.blogspot.jp/" target="_blank"><img src="common/img/glonav5_off.png" width="81" height="29" alt="ブログ"  /></a></li>
                         </ul>
@@ -62,34 +83,147 @@
         </header>
         <div id="headerBottom">
         </div>
+
         <main id="contents">
-            <section id="contentsInner" class="clearfix">
-                <div class="clearfix">
-                    <h2 class="top">最新の公演</h2>
-                    <p id="under"><img class="fluid" id="underline" src="common/img/underline.png" width="990" height="5" alt="区切り線" /></p>
-                    <p id="flyer" class="fluid"><img class="fluid" src="common/img/restart_omote.jpg" width="658" height="" alt="ミュージカル「リスタート！」のフライヤー" /></p>
-                    <section id="description">
-                        <h3 class="top">第4回本公演ミュージカル「リスタート！」</h3>
-                        <p>初演から3年。<br>物語や演出を大幅リニューアルしての再上演です。<br>ロックとポップスを中心に、ゴスペル、カントリー、アニソン等を加えた多彩なラインナップ。<br>さらに今回の初ホール公演にあたり、個性豊かな客演を多数迎えました。</p>
-                        <p>「何のために生きるのか 何のため息をするのか」<br>将来への夢や希望、立ちはだかる現実。<br>それでも歩み続ける人々の物語が、再び幕を開ける。</p>
-                        <p>脚本/作詞/作曲：高安剛士<br>演出：大見謝龍一<br>編曲：大城清貴</p>
-                        <p>※本公演は終演しました。</p>
+            <div id="contentsInner" class="clearfix">
+                <div id="beige">
+                    <div id="top_gray">
+
+                    <section class="pT2_58">
+                    <div class="slider-pro" id="slider2">
+    					<div class="sp-slides">
+       	 					<!-- Slide 1 -->
+        					<div class="sp-slide">
+            					<img class="sp-image" src="common/img/slider01.jpg"/>
+        					</div>
+					        <!-- Slide 2 -->
+					        <div class="sp-slide">
+					            <img class="sp-image" src="common/img/slider02.jpg"/>
+					        </div>
+					        <!-- Slide 3 -->
+					        <div class="sp-slide">
+					            <img class="sp-image" src="common/img/slider03.jpg"/>
+					        </div>
+					        <!-- Slide 4 -->
+					        <div class="sp-slide">
+					            <img class="sp-image" src="common/img/slider04.jpg"/>
+					        </div>
+					        <!-- Slide 5 -->
+					        <div class="sp-slide">
+					            <img class="sp-image" src="common/img/slider05.jpg"/>
+					        </div>
+					        <!-- Slide 6 -->
+					        <div class="sp-slide">
+					            <img class="sp-image" src="common/img/slider06.jpg"/>
+					        </div>
+					        <!-- Slide 7 -->
+					        <div class="sp-slide">
+					            <img class="sp-image" src="common/img/slider07.jpg"/>
+					        </div>
+					        <!-- Slide 8 -->
+					        <div class="sp-slide">
+					            <img class="sp-image" src="common/img/slider08.jpg"/>
+					        </div>
+					        <!-- Slide 9 -->
+					        <div class="sp-slide">
+					            <img class="sp-image" src="common/img/slider09.jpg"/>
+					        </div>
+					        <!-- Slide 10 -->
+					        <div class="sp-slide">
+					            <img class="sp-image" src="common/img/slider10.jpg"/>
+					        </div>
+					        <!-- Slide 11 -->
+					        <div class="sp-slide">
+					            <img class="sp-image" src="common/img/slider11.jpg"/>
+					        </div>
+						</div>
+						<div class="sp-thumbnails">
+						    <img class="sp-thumbnail" src="common/img/slider01.jpg"/>
+						    <img class="sp-thumbnail" src="common/img/slider02.jpg"/>
+						    <img class="sp-thumbnail" src="common/img/slider03.jpg"/>
+						    <img class="sp-thumbnail" src="common/img/slider04.jpg"/>
+						    <img class="sp-thumbnail" src="common/img/slider05.jpg"/>
+						    <img class="sp-thumbnail" src="common/img/slider06.jpg"/>
+						    <img class="sp-thumbnail" src="common/img/slider07.jpg"/>
+						    <img class="sp-thumbnail" src="common/img/slider08.jpg"/>
+						    <img class="sp-thumbnail" src="common/img/slider09.jpg"/>
+						    <img class="sp-thumbnail" src="common/img/slider10.jpg"/>
+						    <img class="sp-thumbnail" src="common/img/slider11.jpg"/>
+						</div>
+					</div>
+					</section>
+
+                    <section class="pB2_58 clearfix">
+                        <div id="top_description">
+                            <h2 class="top">劇団5-4&nbsp;<span class="top">ごのよん</span></h2>
+                            <p>小学5年生のあの頃を覚えていますか。</p>
+                            <p>学校の中では大人になったような、卒業までの時間が無限にあるような。</p>
+                            <p>気づけばいつの間にか成人してて、自由な時間は少なくなってた。</p>
+                            <p>それでも、やりたいことをやりたいようにやってみる。学生じゃなくなっても学び続け、発表する。</p>
+                            <p>琉球大学のミュージカル制作授業をきっかけに出会った私たちは、ここ沖縄で、そんな挑戦をしています。</p>
+                            <p>メンバー総勢23名。主にミュージカルを中心に、演劇や音楽コンサート等の舞台公演、映像制作などで活動中。</p>
+                            <p>アイディアを大事にしたい一心で一生勉強、一生成長。</p>
+                        </div>
+                        <div id="photoBox" class="clearfix">            
+                            <p class="top_stagePhoto">
+                                <a id="stagePhoto01">
+                                    <img id="stagePhoto01Small" class="fluid" src="common/img/photoBig01.jpg" width="200" height="130" alt="演劇PROJECT「シックスティ」の記念集合写真" />
+                                </a>
+                            </p>
+                            <p class="top_stagePhoto">
+                                <a id="stagePhoto02">
+                                    <img id="stagePhoto02Small" class="fluid" src="common/img/photoSmall02.jpg" width="200" height="130" alt="旗揚げ公演ミュージカル「リスタート」の記念集合写真" />
+                                </a>
+                            </p>
+                            <p class="top_stagePhoto">
+                                <a id="stagePhoto03">
+                                    <img id="stagePhoto03Small" class="fluid" src="common/img/photoSmall03.jpg" width="200" height="130" alt="本公演ミュージカル「Acoustic」でのバンド演奏写真" />
+                                </a>
+                            </p>
+                            <p class="top_stagePhoto">
+                                <a id="stagePhoto04">
+                                    <img id="stagePhoto04Small" class="fluid" src="common/img/photoBig04.jpg" width="200" height="130" alt="本公演ミュージカル「アテンション・プリーズ」公演写真" />
+                                </a>
+                            </p>
+                        </div>
                     </section>
-                    <p id="next"><a href="next/restart/intro.html#beige"><img class="fluid thinly" src="common/img/next.png" width="601" height="40" alt="続きを見る" /></a></p>
-                </div>
-                <div class="clearfix" id="iframeBox">
-                	<div id="iframeContentYoutube">
-                        <div id="iframeFluidYoutube">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/GD0JC1UDAa8" frameborder="1" allowfullscreen></iframe>
+                    <section class="top_section clearfix">
+                        <h2 class="top pB2">最新の公演</h2>
+                        <p id="flyer" class="fluid"><img class="fluid" src="common/img/restart_omote.jpg" width="658" height="" alt="ミュージカル「リスタート！」のフライヤー" /></p>
+                        <div id="description">
+                            <h3 class="top">第4回本公演ミュージカル「リスタート！」</h3>
+                            <p>初演から3年。<br>物語や演出を大幅リニューアルしての再上演です。<br>ロックとポップスを中心に、ゴスペル、カントリー、アニソン等を加えた多彩なラインナップ。<br>さらに今回の初ホール公演にあたり、個性豊かな客演を多数迎えました。</p>
+                            <p>「何のために生きるのか 何のため息をするのか」<br>将来への夢や希望、立ちはだかる現実。<br>それでも歩み続ける人々の物語が、再び幕を開ける。</p>
+                            <p><a href="next/restart/intro.html#beige">公演の詳細を見る</a></p>
                         </div>
-                    </div>
-                    <div id="iframeContentFacebook">
-                        <div id="iframeFluidFacebook">
-                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgkdn5n4%2F&tabs=timeline&width=300&height=425&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="300" height="425" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                        </div>
+                    </section>
+                    <section class="top_section">
+                        <h2 class="top pB2">公演履歴</h2>
+                        <dl class="clearfix">
+                            <dt>2017年9月</dt>
+                                <dd class="ddLast"><a href="next/restart/intro.html#beige">第4回本公演ミュージカル「リスタート！」</a></dd>
+                            <dt>2016年10月</dt>
+                                <dd class="ddLast"><a href="next/1/index.html#beige">演劇PROJECT『60』＠首里アルテプランウォーバ(A)ホール</a></dd>
+                            <dt>2015年10月</dt>
+                                <dd><a href="next/2/index.html#beige">第3回本公演ミュージカル『Acoustic!』＠わが街の小劇場</a></dd>
+                            <dt>2015年&nbsp;8月</dt>
+                                <dd><a href="next/3/index.html#beige">短編演劇集『TTT.ver5&nbsp;～高安のたまりにたまった短編集～』＠わが街の小劇場</a></dd>
+                            <dt>2015年&nbsp;3月</dt>
+                                <dd><a href="next/4/index.html#beige">劇団5-4お誕生日会1周年記念LIVE＠スタジオぱふぉ</a></dd>
+                            <dt>2015年&nbsp;1月</dt>
+                                <dd class="ddLast"><a href="next/5/index.html#beige">第2回本公演ミュージカル『アテンション・プリーズ!』＠わが街の小劇場</a></dd>
+                            <dt>2014年12月</dt>
+                                <dd><a href="next/6/index.html#beige">短編演劇集『TTT第四回公演～失笑～』＠スタジオぱふぉ</a></dd>
+                            <dt>2014年&nbsp;3月</dt>
+                                <dd class="ddLast"><a href="next/7/index.html#beige">旗揚げ公演ミュージカル『リスタート!』＠浦添市男女共同参画推進ハーモニーセンター</a></dd>
+                        </dl>
+                    </section>
                     </div>
                 </div>
-            </section>
+            </div>
+
+
+
         </main>
         <footer id="footer">
             <div id="footerInner">

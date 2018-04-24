@@ -74,10 +74,6 @@ img.fluid{
 	margin-left:10.21%;
 }
 
-#mainNav li:first-of-type{
-	margin-left:0;
-}
-
 #mainNav li:nth-of-type(1) a:hover img{
 	background:url(../img/glonav1_on.png) no-repeat;
 }
@@ -87,14 +83,10 @@ img.fluid{
 }
 
 #mainNav li:nth-of-type(3) a:hover img{
-	background:url(../img/glonav3_on.png) no-repeat;
-}
-
-#mainNav li:nth-of-type(4) a:hover img{
 	background:url(../img/glonav4_on.png) no-repeat;
 }
 
-#mainNav li:nth-of-type(5) a:hover img{
+#mainNav li:nth-of-type(4) a:hover img{
 	background:url(../img/glonav5_on.png) no-repeat;
 }
 
@@ -243,91 +235,102 @@ address{
 }
 
 /*top*/
-#contentsInner{
-	max-width:1000px;
-	margin:0 auto;
-	padding-top:89px;
-}
-
-#contentsInner div.clearfix{
-	margin:0 10px;
-}
-
-h2.top,
-h3.top{
-	font-size:125%;
-}
-
+/*about*/
 section img{
 	display:block;
 }
 
-img#underline{
-	height:5px;
+#contentsInner{
+	max-width:1000px;
+	margin:0 auto;
+	padding-top:63px;
+	padding-bottom:60px;
+}
+
+#top_gray{
+	width:100%;
+	background:#494242;
+	border-radius:5px;
+	position:relative;
+}
+
+h2.top{
+	font-size:125%;
+	background: url(../img/underRepeat.png) bottom repeat-x;
+	margin-bottom:20px;
+}
+
+h3.top {
+	font-size: 125%;
 }
 
 #flyer{
 	width:33.58%;
 	float:left;
-	margin-top:3.06%;
 }
 
 #description{
 	width:61.32%;
 	float:left;
 	height:420px;
-	margin:3.06% 0 0 3.06%;
+	margin-left:3.06%;
 	overflow:hidden;
-}
-
-p#next{
-	width:63.36%;
-	float:left;
-	margin:0 0 0 3.06%;
-}
-
-p#next img{
-	min-height:40px;
 }
 
 #description p{
 	margin-top:3.06%;
 }
 
-#iframeBox{
-	margin:0 10px;
+.pT2_58{
+	padding-top: 2.58%;
 }
 
-#iframeContentYoutube{
-	width:57.15%;
-	margin:3.06% 0 0 0;
+.pB2{
+	padding-bottom:2px;
+}
+
+.pB2_58{
+	padding-bottom: 2.58%;
+}
+
+#top_description{
+	float:left;
+	width:48.45%;
+	margin:2.58% 0 0 2.58%;/*height628px確保(598+30)*/
+}
+
+span.top{
+	font-size:60%;
+}
+
+#top_description p{
+	margin-bottom:2px;
+}
+
+#photoBox{
+	width:47.42%;
 	float:left;
 }
 
-#iframeContentFacebook{
-	width:39.75%;
-	margin:3.06% 0 0 3.06%;
+.top_stagePhoto{
 	float:left;
+	width:43.5%;
+	margin:5.44% 0 0 5.44%;
 }
 
-#iframeFluidYoutube{
-	position:relative;
-    width:100%;
-    padding:56.25% 0 0 0;
+.top_section{
+	max-width:920px;
+	margin:2.58% 2.58% 0;
+	padding-bottom:2.58%;
 }
 
-#iframeFluidFacebook{
-	position:relative;
-    width:100%;
-    padding:137% 0 0 0;
+dt{
+	float:left;
+	margin-right:10px;
 }
 
-iframe{
-	position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+.ddLast{
+	margin-bottom:10px;
 }
 
 /*next*/
@@ -594,96 +597,6 @@ span{
 	visibility:hidden;
 }
 
-/*about*/
-#about_contentsInner{
-	max-width:1000px;
-	margin:0 auto;
-	padding-top:63px;
-	padding-bottom:60px;
-}
-
-#about_gray{
-	width:100%;
-	background:#494242;
-	border-radius:5px;
-	position:relative;
-}
-
-h2.about{
-	font-size:125%;
-	background: url(../img/underRepeat.png) bottom repeat-x;
-	margin-bottom:20px;
-}
-
-h2#history{
-	padding-bottom:2px;
-}
-
-#about_description{
-	float:left;
-	width:48.45%;
-	margin:67.31% 0 0 2.58%;/*height628px確保(598+30)*/
-}
-
-span.about{
-	font-size:60%;
-}
-
-#about_description p{
-	margin-bottom:2px;
-}
-
-#stagePhoto02Big,#stagePhoto03Big,#stagePhoto04Big{
-	display:none;
-}
-
-#stagePhoto01Big{
-	position:absolute;
-	top:2%;
-	left:0;
-	right:0;
-	margin:0 auto;
-}
-
-a#stagePhoto02:hover #stagePhoto02Big,
-a#stagePhoto03:hover #stagePhoto03Big,
-a#stagePhoto04:hover #stagePhoto04Big{
-	display:block;
-	position:absolute;
-	top:2%;
-	left:0;
-	right:0;
-	margin:0 auto;
-}
-
-#photoBox{
-	margin-top:64.74%;
-	width:47.42%;
-	float:left;
-}
-
-.about_stagePhoto{
-	float:left;
-	width:43.5%;
-	margin:5.44% 0 0 5.44%;
-}
-
-#about_detail{
-	max-width:920px;
-	margin:2.58% 2.58% 0;
-	padding-bottom:2.58%;
-}
-
-dt{
-	float:left;
-	margin-right:10px;
-}
-
-.ddLast{
-	background:url(../img/underDotRepeat.png) bottom repeat-x;
-	margin-bottom:10px;
-}
-
 /*member*/
 .memberItem img.fluid{
 	max-width:100%;
@@ -751,21 +664,6 @@ dt{
 	/*top*/
 	#description{
 		height:auto;
-	}
-}
-
-@media screen and (max-width:979px){
-	/*about*/
-	#stagePhoto01Big{
-		top:0;
-		border-radius:5px 5px 0 0;
-	}
-	
-	a#stagePhoto02:hover #stagePhoto02Big,
-	a#stagePhoto03:hover #stagePhoto03Big,
-	a#stagePhoto04:hover #stagePhoto04Big{
-		top:0;
-		border-radius:5px 5px 0 0;		
 	}
 }
 
@@ -849,7 +747,7 @@ dt{
 	ul#mainNav2 li {
 		float:none;
 		width:81px;
-		margin:0 auto;
+		margin:5px auto;
 		padding:12px;
 	}
 	
@@ -859,7 +757,7 @@ dt{
 	}
 	
 	input[type="checkbox"].on-off:checked + ul{
-		height: 293px;
+		height: 264px;
 	}
 	
 	#mainNav2 li:first-of-type{
@@ -875,16 +773,12 @@ dt{
 	}
 	
 	#mainNav2 li:nth-of-type(3) a:hover img{
-		background:url(../img/glonav3_on.png) no-repeat;
-	}
-	
-	#mainNav2 li:nth-of-type(4) a:hover img{
 		background:url(../img/glonav4_on.png) no-repeat;
 	}
 	
-	#mainNav2 li:nth-of-type(5) a:hover img{
+	#mainNav2 li:nth-of-type(4) a:hover img{
 		background:url(../img/glonav5_on.png) no-repeat;
-	}	
+	}
 	
 	#mainV{
 		margin:10px 10px 0 10px;
@@ -923,9 +817,11 @@ dt{
 	}
 
 	/*top*/
+	/*about*/
 	#contentsInner{
 		max-width:640px;
-		width:100%;
+		width:100%;		
+		padding-top:110px;/*パンくず21px分プラス*/		
 	}
 	
 	p#flyer{
@@ -941,16 +837,43 @@ dt{
 		margin:0;
 		float:none;
 	}
-	
-	#iframeContentYoutube{
+
+	#top_description{
 		width:auto;
+		max-width:570px;
+		margin:20px 20px 20px 20px;
+	}
+	
+	#top_description p{
+		margin-bottom:0;
+	}
+	
+	#photoBox{
+		display: none;
+	}
+	
+	p.top_stagePhoto{
+		width:auto;
+		margin:0 0 20px 20px;
+		max-width:100%;
+		height:auto;
 		float:none;
 	}
 	
-	#iframeContentFacebook{
-		width:auto;
-		float:none;
-		margin:3.06% 0 0 0;
+	#stagePhoto02Small,#stagePhoto03Small{
+		display:none;
+	}
+	
+	#stagePhoto01Small,#stagePhoto04Small{
+		display:block;
+		width:100%;
+		max-width:100%;
+		height:auto;
+	}
+	
+	.top_section{
+		margin:0 20px;
+		padding-bottom:20px;
 	}
 	
 	/*next*/
@@ -1056,64 +979,6 @@ dt{
 		width:auto;
 		margin:0 20px 20px;
 	}
-
-	/*about*/
-	#about_contentsInner{
-		max-width:640px;
-		width:100%;		
-		padding-top:110px;/*パンくず21px分プラス*/		
-	}
-	
-	#about_description{
-		width:auto;
-		max-width:570px;
-		margin:20px 20px 20px 20px;
-	}
-	
-	#about_description p{
-		margin-bottom:0;
-	}
-	
-	#photoBox{
-		width:auto;
-		max-width:590px;
-		margin-right:20px;
-		margin-top:0;
-	}
-	
-	p.about_stagePhoto{
-		width:auto;
-		margin:0 0 20px 20px;
-		max-width:100%;
-		height:auto;
-		float:none;
-	}
-	
-	#stagePhoto01Small,#stagePhoto02Small,#stagePhoto03Small,#stagePhoto04Small{
-		display:none;
-	}
-	
-	#stagePhoto01Big{
-		position:static;
-		border-radius:0;
-	}	
-	
-	#stagePhoto01Big,#stagePhoto04Big{
-		display:block;
-		width:100%;
-		max-width:100%;
-		height:auto;
-	}
-
-	a#stagePhoto04:hover #stagePhoto04Big{
-		position:static;
-		width:100%;
-	}
-	
-	#about_detail{
-		margin:0 20px;
-		padding-bottom:20px;
-	}
 	
 	/*member*/
 	#member_contentsInner{
@@ -1184,8 +1049,15 @@ dt{
 	}
 	
 	/*top*/
+	/*about*/
 	#contentsInner{
+		width:100%;
 		padding-top:0;
+	}
+	
+	#top_gray{
+		width:100%;
+		background:none;
 	}
 	
 	p#flyer{
@@ -1200,6 +1072,26 @@ dt{
 	
 	p#next{
 		margin:0;
+	}
+
+	#top_description{
+		margin:10px 10px 10px 10px;
+	}
+	
+	#photoBox{
+		margin-right:0;
+	}
+	
+	p.top_stagePhoto{
+		margin:0 10px 10px 10px;
+	}
+	
+	.top_section{
+		margin:30px 10px 0;
+	}
+	
+	h2.top{
+		margin-bottom:10px;
 	}
 	
 	/*next*/
@@ -1338,37 +1230,6 @@ dt{
 	}
 	
 	#next_7_detail p{
-		margin-bottom:10px;
-	}
-
-	/*about*/
-	#about_contentsInner{
-		width:100%;
-		padding-top:0;
-	}
-	
-	#about_gray{
-		width:100%;
-		background:none;
-	}
-	
-	#about_description{
-		margin:10px 10px 10px 10px;
-	}
-	
-	#photoBox{
-		margin-right:0;
-	}
-	
-	p.about_stagePhoto{
-		margin:0 10px 10px 10px;
-	}
-	
-	#about_detail{
-		margin:0 10px;
-	}
-	
-	h2.about{
 		margin-bottom:10px;
 	}
 	
