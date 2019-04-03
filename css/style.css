@@ -1,0 +1,478 @@
+@charset "utf-8";
+
+/*----------------------------------------
+  base
+----------------------------------------*/
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-size: 1.4rem;
+  font-family: 'Yu Gothic', 游ゴシック, YuGothic, 游ゴシック体, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  color: #080D14;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: inherit;
+  -webkit-transition: color .075s linear;
+  -moz-transition: color .075s linear;
+  -o-transition: color .075s linear;
+  transition: color .075s linear;
+}
+a:hover {
+  color: #ff8dac;
+}
+p {
+  line-height: 2.4rem;
+}
+
+/* clearfix
+--------------------------------------- */
+.clearfix:after{  
+  content: " ";
+  display: block;
+  clear: both;
+  visibility:hidden;
+  height:0;
+  font-size: 0;
+} 
+
+/* header
+--------------------------------------- */
+.header {
+  max-width: 760px;
+  margin: 20px auto 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.logo {
+  max-width: 90px;
+  float: left;
+}
+/* hamburger button */
+.nav-button,
+.nav-button span {
+  display: inline-block;
+  transition: all 0.4s;
+  box-sizing: border-box;
+}
+.nav-button {
+  z-index: 20;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  float: right;
+}
+.nav-button span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #080D14;
+  border-radius: 4px;
+}
+.nav-button span:nth-of-type(1) {
+  top: 0;
+}
+.nav-button span:nth-of-type(2) {
+  top: 9px;
+}
+.nav-button span:nth-of-type(3) {
+  bottom: 0;
+}
+.nav-button.active span {
+  background-color: #fff;
+}
+.nav-button.active span:nth-of-type(1) {
+  -webkit-transform: translateY(9px) rotate(-45deg);
+  transform: translateY(9px) rotate(-45deg);
+}
+.nav-button.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.nav-button.active span:nth-of-type(3) {
+  -webkit-transform: translateY(-9px) rotate(45deg);
+  transform: translateY(-9px) rotate(45deg);
+}
+.menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+.menu_list {
+  color: #fff;
+  text-align: center;
+  padding: 100px;
+}
+.menu_list .current {
+  color: #ff8dac;
+}
+.menu_list_item {
+    display: block;
+    margin: 4rem auto;
+}
+.menu_list_item a {
+  text-decoration: none;
+  font-size: 3.2rem;
+  font-weight: 600;
+  letter-spacing: 0.6rem;
+}
+.menu.open {
+  display: block;
+}
+.menu.close {
+  display: none;
+}
+
+/* page-top
+--------------------------------------- */
+#page-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+#page-top a:hover {
+  opacity: 0.7;
+}
+.arrow a::before{
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-top: solid 1px #000;
+  border-right: solid 1px #000;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  right: 0;
+}
+#page-top a span {
+  opacity: 0;
+  font-size: 0;
+}
+
+/* footer
+--------------------------------------- */
+.footer {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 20px;
+  padding: 20px 20px 0;
+  box-sizing: border-box;
+}
+.highlighter {
+  background: linear-gradient(transparent 80%, DarkOrange 80%);
+} 
+.social {
+  list-style: none;
+  max-width: 140px;
+  margin: 15px auto 60px;
+}
+.social_item {
+  max-width: 40px;
+  margin: 0 15px;
+  float:left;
+}
+.social_item a:hover {
+  opacity: 0.7;
+}
+.contact {
+  margin-bottom: 40px;
+}
+
+/* parts
+--------------------------------------- */
+.container_inner {
+  max-width: 760px;
+  margin: 35px auto 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.container_inner_item {
+  margin-bottom: 70px;
+}
+.breadcrumb {
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+.breadcrumb_item {
+  float: left;
+  padding-bottom: 1rem;
+}
+.breadcrumb_item:not(:last-child)::after {
+  content: '>';
+  margin-right: 0.7em;
+  margin-left: 0.7em;
+}
+.title {
+  font-size: 2.7rem;
+  text-align: center;
+  margin-bottom: 10px;
+  line-height: 3rem;
+}
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+.img-box {
+  margin-bottom: 10px;
+}
+.sp {
+  display: block;
+}
+
+/*----------------------------------------
+  HOME
+----------------------------------------*/
+/* history
+--------------------------------------- */
+.history dt {
+  font-weight: bold;
+  margin-top: 1.7rem;
+}
+.history dt:nth-of-type(1) {
+  margin-top: 0;
+}
+.history dt,
+.history dd {
+  margin-bottom: 1rem;
+}
+
+/*----------------------------------------
+  WORKS
+----------------------------------------*/
+.works {
+  text-align: center;
+}
+.works .title {
+  margin-bottom: 30px;
+}
+.works_item {
+  margin-bottom: 60px;
+}
+.works_item_image img {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0), 0 6px 10px 0 rgba(0,0,0,0.3), 0 2px 2px 0 rgba(0,0,0,0.2);
+}
+.works_item_image a:hover {
+  opacity: 0.7;
+}
+.works_item_image a:hover > img {
+  transform: scale(1.03)!important;
+  -ms-transform: scale(1.03)!important;
+  -webkit-transform: scale(1.03)!important;
+  -o-transform: scale(1.03)!important;
+   -moz-transform: scale(1.03)!important;
+}
+.works_item_title {
+  margin: 10px 0;
+}
+/*----------------------------------------
+  STAGE
+----------------------------------------*/
+.stage_date {
+  text-align: center;
+  margin: 10px 0;
+}
+.stage_detail {
+  text-align: left;
+  background: #f7f5f5;
+  padding: 20px 30px;
+  margin-top: 20px;
+}
+.stage_detail_title {
+  margin-bottom: 5px;
+}
+.title_short { /* ttt5 */
+  margin-top: 10px; 
+}
+/* youtube
+--------------------------------------- */
+.stage_youtube {
+  margin-top: 20px;
+}
+.youtube {
+    position: relative;
+    width: 100%;    /* 左右に余白が必要なら値を変更してもOK */
+    height: 0;
+    padding-bottom: 56.25%;    /* padding-topでもOK */
+    overflow: hidden;
+}
+.youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;    /* 必要であれば!importantを付けてください */
+    height: 100%;    /* 必要であれば!importantを付けてください */
+}
+/* mtest
+--------------------------------------- */
+.mtest {
+  margin-top: 20px;
+}
+.mtest h2 {
+  margin-bottom: 10px;
+}
+/* google-map
+--------------------------------------- */
+.google-map {
+    position: relative;
+    width: 100%;    /* 左右に余白が必要なら値を変更してもOK */
+    height: 0;
+    padding-bottom: 56.25%;    /* padding-topでもOK */
+    overflow: hidden;
+}
+.google-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;    /* 必要であれば!importantを付けてください */
+    height: 100%;    /* 必要であれば!importantを付けてください */
+}
+/*----------------------------------------
+  MEMBER
+----------------------------------------*/
+.member_image {
+  padding: 0 2px;
+  margin-bottom: 30px;
+}
+.member_item {
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0 2px 20px;
+  width: calc(50% - 4px);
+  float: left;
+  min-height: 240px;
+}
+.member_item_inner {
+  max-width: 200px;
+  margin: 0 auto;
+  position: relative;
+}
+.member_name {
+  padding: 10px 0;
+}
+.member_twitter {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+}
+.member_twitter a:hover {
+  opacity: 0.7;
+}
+
+
+@media screen and (min-width:768px) { 
+  /* header
+  --------------------------------------- */
+  .logo {
+    max-width: none;
+  }
+  /* hamburger button */
+  .nav-button {
+    display: none;
+  }
+  .menu {
+    display: block;
+    position: static;
+    float: right;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    padding: 20px 0;
+  }
+  .menu_list {
+    color: #080D14;
+    text-align: start;
+    padding: 0;
+  }
+  .menu_list_item {
+    display: inline-block;
+    margin: 0 0 0 2rem;
+  }
+  .menu_list_item a {
+    font-size: 1.6rem;
+  }
+  /* page-top
+  --------------------------------------- */
+  #page-top {
+    right: 5%;
+  }
+}
+
+@media screen and (min-width:600px) { 
+  /* parts
+  --------------------------------------- */
+  .sp {
+    display: none;
+  }
+  /*----------------------------------------
+    HOME
+  ----------------------------------------*/
+  /* history
+  --------------------------------------- */
+  .history {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .history dt {
+    margin: 0;
+    float: left;
+  }
+  .history dd {
+    margin: 0 0 1.5rem 10rem;
+  }
+  /*----------------------------------------
+    WORKS
+  ----------------------------------------*/
+  .works_item {
+    width: 45%;
+    margin-right: 10%;
+    float: left;
+  }
+  .works_item:nth-of-type(even) {
+    margin-right: 0;
+  }
+  /*----------------------------------------
+    STAGE
+  ----------------------------------------*/
+  .stage_small img { /* ttt4,first */
+    max-width: 542px;
+    display: block;
+    margin: 0 auto;
+  }
+  .stage_lead {
+    text-align: center;
+  }
+  /*----------------------------------------
+    MEMBER
+  ----------------------------------------*/
+  .member-bg {
+    background: #ffebf0;
+    padding-top: 5px;
+  }
+  .member_image {
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .member_item {
+    float: left;
+    width: 32%;
+    padding: 10px;
+    margin: 0 2% 20px 0;
+  }
+  .member_item:nth-of-type(3n) {
+    margin-right: 0;
+  }
+  .member_twitter {
+    right: 0;
+  }
+}
