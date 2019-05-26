@@ -193,12 +193,12 @@ p {
 --------------------------------------- */
 .container_inner {
   max-width: 760px;
-  margin: 35px auto 0;
+  margin: 50px auto 0;
   padding: 0 20px;
   box-sizing: border-box;
 }
 .container_inner_item {
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 .breadcrumb {
   list-style-type: none;
@@ -216,12 +216,12 @@ p {
 .title {
   font-size: 2.7rem;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   line-height: 3rem;
 }
 .button {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .img-box {
   margin-bottom: 10px;
